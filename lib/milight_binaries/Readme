@@ -1,0 +1,38 @@
+MiLight/LimitlessLED/EasyBulb RGBW v3.0/v4.0 Command Line Utility
+Version 1.04 (01/08/2015)
+---------->>>>> http://iqjar.com <<<<<----------
+
+Works with the MiLight wireless bridge v3.0/v4.0 and with the MiLight RGBW LED bulbs.
+http://www.milight.com/milight-wifi-receiver-bridge-3-0-controller-box/
+http://www.milight.com/1-milight-rgbw-9w-led-light-bulb-iphone-and-android-controlled/
+http://www.limitlessled.com/shop/wifi-udp-receiver-bridge/
+http://www.limitlessled.com/shop/rgbw-color-led-light-bulb/
+
+For technical details visit: http://www.limitlessled.com/dev/
+
+Usage: milight [ZONE] COMMAND [PARAMETER]
+
+The optional ZONE argument specifies which bulb zone the command refers to.
+If this argument is omitted, the command is considered to refer to all zones.
+Possible values:
+  ALL/0 - All zones
+  1     - Zone 1
+  2     - Zone 2
+  3     - Zone 3
+  4     - Zone 4
+
+The COMMAND argument specifies the command to be sent to the given bulb zone.
+Some commands require a parameter (see below).
+Accepted commands:
+  ON                 - Turn the bulbs in the given zone on. 
+  OFF                - Turn the bulbs in the given zone off.
+  WHITE/W            - Set the color of the bulbs in the given zone to white.
+  DISCO/D [+/-]      - If no parameter is specified, turn disco mode on.
+                       The '+' optional parameter increases the disco speed.
+                       The '-' optional parameter decreases the disco speed.
+  BRIGHTNESS/B VALUE - Set the brightness of the bulbs in the given zone.
+                       The VALUE mandatory parameter specifies the brightness
+                       and must be an integer number in the range 1-19.
+  COLOR/C VALUE      - Set the color of the bulbs in the given zone.
+                       The VALUE mandatory parameter specifies the color
+                       and must be an integer number in the range 0-255.
