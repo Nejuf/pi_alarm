@@ -1,0 +1,2 @@
+This directory holds audio files for pi_alarm to play back.
+To save space on the git repo, files are downloaded via download_audio.sh
