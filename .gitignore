@@ -17,3 +17,4 @@ audio/*wav
 audio/*flac
 audio/*ogg
 
+config/alarm_config/*.alarm
